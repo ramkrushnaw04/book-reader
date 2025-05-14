@@ -3,6 +3,7 @@ import ChatMessage from "../components/ChatMessage"
 import { FiSend } from 'react-icons/fi'
 import { motion } from 'framer-motion';
 import axios from 'axios'
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 
 interface Message {
@@ -20,7 +21,7 @@ const Home = () => {
 
     const handleSendButtonClick = () => {
         axios.post(
-            'http://localhost:3000/query', 
+            backendUrl + '/query', 
             { word: messageText }
         )
         .then(response => {
