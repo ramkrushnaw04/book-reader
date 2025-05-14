@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import ChatMessage from "../components/ChatMessage"
 import { FiSend } from 'react-icons/fi'
 import { motion } from 'framer-motion';
